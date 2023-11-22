@@ -36,12 +36,12 @@ def read_item(ID: str):
 def send_message(Telephone:str, Name: str):
     from sdk.api.message import Message
     from sdk.exceptions import CoolsmsException
-    api_key = 'NCS2IK2ODBDUANTK'
-    api_secret = 'UGIGKUCDE475UKT6VTPPY464DQMRQFHY'
+    api_key = ''
+    api_secret = ''
     params = dict()
     params['type'] = 'sms'  # Message type ( sms, lms, mms, ata )
     params['to'] = Telephone  # Recipients Number '01000000000,01000000001'
-    params['from'] = '01053526025'  # Sender number
+    params['from'] = ''  # Sender number
     params['text'] = f'{Name} 학생 출결'
 
     print('heloo')
@@ -95,6 +95,3 @@ def open_exel():
         list_.append([name, phone, phone_back, password])
     return list_
 
-
-# api_key = 'NCS2IK2ODBDUANTK'
-# api_secret = 'UGIGKUCDE475UKT6VTPPY464DQMRQFHY'
